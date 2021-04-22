@@ -1,4 +1,4 @@
-package com.migdalmateusz.GitHubProject;
+package com.migdalmateusz.githubproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

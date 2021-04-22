@@ -1,4 +1,4 @@
-package com.migdalmateusz.GitHubProject;
+package com.migdalmateusz.githubproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

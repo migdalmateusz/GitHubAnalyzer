@@ -1,12 +1,11 @@
-package com.migdalmateusz.GitHubProject.controller;
+package com.migdalmateusz.githubproject.controller;
 
-import com.migdalmateusz.GitHubProject.model.GitHubDto;
-import com.migdalmateusz.GitHubProject.service.GitHubService;
+import com.migdalmateusz.githubproject.model.GitHubDto;
+import com.migdalmateusz.githubproject.service.GitHubService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class GitHubController {
@@ -20,7 +19,7 @@ public class GitHubController {
     @GetMapping("/github/{userName}")
     public String getGitHub(@PathVariable (value = "userName") String userName, Model model) {
         GitHubDto[] gitHubDto = gitHubService.getGitHub(userName);
-        int starSum = 0;
+        var starSum = 0;
         for (GitHubDto entry : gitHubDto) {
             starSum = starSum + entry.getStargazers_count();
         }

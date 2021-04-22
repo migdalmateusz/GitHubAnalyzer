@@ -1,4 +1,4 @@
-package com.migdalmateusz.GitHubProject.model;
+package com.migdalmateusz.githubproject.model;
 
 public class GitHubDto {
     private String name;

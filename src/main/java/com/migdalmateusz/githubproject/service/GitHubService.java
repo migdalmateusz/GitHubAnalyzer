@@ -1,6 +1,6 @@
-package com.migdalmateusz.GitHubProject.service;
+package com.migdalmateusz.githubproject.service;
 
-import com.migdalmateusz.GitHubProject.model.GitHubDto;
+import com.migdalmateusz.githubproject.model.GitHubDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
